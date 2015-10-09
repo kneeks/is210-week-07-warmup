@@ -1,20 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""..................."""
+"""This module runs a while loop."""
 
 
-def fibonacci(maxtint):
+def fibonacci(maxint):
     """
-    This function 
+    This is a Fibonacci sequence generator function with a while loop.
 
     Args:
-        maxint (int):
+        maxint (int): sets the mac interger for the while loop
 
     Returns:
-        int: 
+        int: list of integers appended from the while loop
 
     Examples:
 
+        >>> import task_01
+        >>> task_01.fibonacci(10)
+        [0, 1, 1, 2, 3, 5, 8]
+
     """
-    lastnum, curnum = curnum, lastnum + curnum
-    
+    list1 = [0, ]
+    lastnum, curnum = 0, 1
+    while curnum < maxint:
+        list1.append(curnum)
+        lastnum, curnum = curnum, lastnum + curnum
+    return list1
