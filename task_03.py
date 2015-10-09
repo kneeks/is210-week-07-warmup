@@ -24,9 +24,11 @@ def lexicographics(to_analyze):
         
 
     """
-    lines = to_analyze.split('\n')
-    maxnum = []
-    for words in lines:
-        a = words.split()
-    return a
-    
+    words = (to_analyze.split('\n'))
+    maxnum = 0
+    minnum = 0
+    avgnum = 0
+    for items in words:
+        maxnum = max(items.split())
+        
+        return len(max(maxnum))
