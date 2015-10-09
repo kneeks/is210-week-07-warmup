@@ -5,7 +5,7 @@
 
 # Import Python libs
 import decimal
-
+import data
 
 def lexicographics(to_analyze):
     """
@@ -24,10 +24,9 @@ def lexicographics(to_analyze):
         
 
     """
-    maxnum = 0
-    minnum = 0
-    avgnum = 0
-    for items in to_analyze:
-        if 
-        words = len(to_analyze.split())
-        return words
+    lines = to_analyze.split('\n')
+    maxnum = []
+    for words in lines:
+        a = words.split()
+    return a
+    
