@@ -5,7 +5,7 @@
 
 # Import Python libs
 import decimal
-import data
+
 
 def lexicographics(to_analyze):
     """
@@ -17,18 +17,18 @@ def lexicographics(to_analyze):
         to_analyze (str): string to find max min, and avg.
 
     Returns:
-        mixed: 
+        mixed: max, min, avg
 
     Examples:
-
-        
+        >>> import task_03
+        >>> task_03.lexicographics('''Don't stop believing,
+        Hold on to that feeling.''')
+        (5, 3, Decimal(4.0))
 
     """
     words = (to_analyze.split('\n'))
-    maxnum = 0
-    minnum = 0
-    avgnum = 0
+    list1 = []
     for items in words:
-        maxnum = max(items.split())
-        
-        return len(max(maxnum))
+        nums = len(items.split())
+        list1.append(nums)
+    return max(list1), min(list1), (sum(list1) / decimal.Decimal(len(list1)))
